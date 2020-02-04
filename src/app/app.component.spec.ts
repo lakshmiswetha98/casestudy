@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'route-base-app'`, () => {
+  it(`should have as title 'pixogram'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('route-base-app');
+    expect(app.title).toEqual('pixogram');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('route-base-app app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('pixogram app is running!');
   });
 });

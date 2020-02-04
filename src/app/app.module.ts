@@ -1,38 +1,42 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
-import { MenuComponent } from './menu/menu.component';
-import { SearchComponent } from './search/search.component';
-import { LoginComponent } from './login/login.component';
-import { LogoutComponent } from './logout/logout.component';
-import { from } from 'rxjs';
-import { MedialistComponent } from './media/medialist/medialist.component';
-import { MediaAddComponent } from './media-add/media-add.component';
+import { HeaderComponent } from './head/header/header.component';
+import { UserComponent } from './head/user/user.component';
+import { LogincComponent } from './login/loginc/loginc.component';
+import { RegisterComponent } from './login/register/register.component';
+import { GalleryComponent } from './media/gallery/gallery.component';
+import { MymediaComponent } from './media/mymedia/mymedia.component';
+import { UploadmediaComponent } from './media/uploadmedia/uploadmedia.component';
+import { FollowersComponent } from './media/followers/followers.component';
+import { MultimediaComponent } from './media/multimedia/multimedia.component';
+import { SinglemediaComponent } from './media/singlemedia/singlemedia.component';
+import { AccountComponent } from './account/account.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    AboutComponent,
-    ContactComponent,
-    MenuComponent,
-    SearchComponent,
+    HeaderComponent,
+    UserComponent,
+    LogincComponent,
+    RegisterComponent,
+    GalleryComponent,
+    MymediaComponent,
+    UploadmediaComponent,
+    FollowersComponent,
+    MultimediaComponent,
+    SinglemediaComponent,
+    AccountComponent,
+   
     
-    LoginComponent,
-    LogoutComponent,
-    MedialistComponent,
-    MediaAddComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
